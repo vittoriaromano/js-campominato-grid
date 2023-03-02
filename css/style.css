@@ -56,32 +56,35 @@ main{
 .board{
     height: 37.25rem;
     width: 37.25rem;
-    margin: 60px;
+    padding: 60px;
     background-color: aliceblue;
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
-    background-color:#7fffd4 ;
+    background-color:#7fffd4;
 
 }
 
-.cell{
+.large{
     border: 1px solid black;
     width: calc(100% / 10);
     height:calc(100% / 10) ;
     
 }
 
-.cell-10{
-    width: calc(100% / 10);
+.medium{
+    border: 1px solid black;
+    width: calc(100% / 8);
     height:calc(100% / 10) ;
 
 }
 
-.cell-8{
-    width: calc(100% / 8);
-    height:calc(100% / 8);
+.small{
+    border: 1px solid black;
+    width: calc(100% / 5);
+    height:calc(100% / 10);
     
 }
+
 
 /* fine main */

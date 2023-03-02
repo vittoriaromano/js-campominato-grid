@@ -26,20 +26,44 @@ function myAppendElement(containerElement, htmlElement){
 //main
 
 //ceare le celle x 100
-let cellNumber = '100'
+
 const containerBoard = document.querySelector('.board');
 
 //far mostrare le celle al click
  const btn = document.querySelector('.btn');
 
- btn.addEventListener('click', function(){
+
+// const numeroCelle = document.querySelector('.choose');
+// const numeroCelleValue = numeroCelle.value;
+// let cellNumber = numeroCelleValue;
+// const small = document.querySelector('.small');
+// const medium =  document.querySelector('.medium');
+// const large = document.querySelector('.large');
+// let size = [small, medium, large];
+// if(cellNumber === 'easy') { 
+//              size = [2];
+//              cellNumber = '100';
+//     } if(cellNumber === 'medium'){
+//            size = [1];
+//            cellNumber = '80';
+//     } else {
+//             size = [0];
+//             cellNumber = '50';
+//     }
     
+let cellNumber = '100';
+
+ btn.addEventListener('click', function(){
      for(let i = 1; i <= cellNumber; i++){
-        const createdElement = myCreateElement('div', 'cell', i);
+        const createdElement = myCreateElement('div', 'large', i);
         myAppendElement(containerBoard, createdElement);
       
     }
+    
+  } );
 
-  } )
+  
+  
+
 
 
